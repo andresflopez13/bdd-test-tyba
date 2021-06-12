@@ -1,0 +1,62 @@
+defaultTasks 'clean', 'test', 'aggregate'
+
+repositories {
+    mavenLocal()
+    jcenter()
+}
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath "gradle.plugin.com.github.sherter.google-java-format:google-java-format-gradle-plugin:0.8"
+        classpath "net.serenity-bdd:serenity-gradle-plugin:2.3.4"
+        classpath "net.serenity-bdd:serenity-single-page-report:2.3.4"
+    }
+}
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+apply plugin: "com.github.sherter.google-java-format"
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+serenity {
+    reports = ["single-page-html"]
+}
+
+ext {
+    serenityVersion = '2.4.24'
+    serenityCucumberVersion = '2.4.24'
+    hibernateVersion = '5.4.12.Final'
+    slf4jVersion = '1.7.30'
+}
+
+dependencies {
+    implementation group: 'net.serenity-bdd',                   name: 'serenity-core',                      version: "$rootProject.ext.serenityVersion"
+    implementation group: 'net.serenity-bdd',                   name: 'serenity-junit',                     version: "$rootProject.ext.serenityVersion"
+    implementation group: 'net.serenity-bdd',                   name: 'serenity-screenplay',                version: "$rootProject.ext.serenityVersion"
+    implementation group: 'net.serenity-bdd',                   name: 'serenity-ensure',                    version: "$rootProject.ext.serenityVersion"
+    implementation group: 'net.serenity-bdd',                   name: 'serenity-cucumber6',                 version: "$rootProject.ext.serenityCucumberVersion"
+    implementation group: 'org.slf4j',                          name: 'slf4j-api',                          version: "$rootProject.ext.slf4jVersion"
+    implementation group: 'org.slf4j',                          name: 'slf4j-log4j12',                      version: "$rootProject.ext.slf4jVersion"
+}
+
+gradle.startParameter.continueOnFailure = true
+
+test.finalizedBy(aggregate)
+test.finalizedBy(reports)
+
+compileJava.dependsOn 'googleJavaFormat'
