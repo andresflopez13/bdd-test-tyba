@@ -8,7 +8,7 @@ Característica: Calcular el crédito para vivienda
     Dado que Andres ingresa al portal web de metro cuadrado
     Y se dirige a la calculadora de crédito para saber cuanto le prestan
     Cuando ingresa el valor de su salario <salario> mensual y el plazo <plazo> en años
-    Entonces verifica que debe tener una inicial de <inicial> para poder prestar al banco <monto>
+    Entonces verifica que debe tener una inicial de <inicial> para poder prestar al banco <monto> con un salario de <salario>
 
     Ejemplos:
       | salario | plazo | inicial  | monto     |

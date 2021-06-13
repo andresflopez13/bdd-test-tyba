@@ -1,5 +1,6 @@
 package co.com.tyba.test.metrocuadrado.stepdefinitions;
 
+import static co.com.tyba.test.metrocuadrado.utils.EndPoints.URL_BASE;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
 
 import co.com.tyba.test.metrocuadrado.drivers.LocalBrowser;
@@ -19,8 +20,6 @@ public class GeneralStepDefinition {
   @Dado("^que (.*) ingresa al portal web de metro cuadrado$")
   public void enterTheMetroCuadradoWebPortal(String name) {
     theActorCalled(name)
-        .can(
-            BrowseTheWeb.with(
-                LocalBrowser.getConnection().onUrl("https://www.metrocuadrado.com/")));
+        .can(BrowseTheWeb.with(LocalBrowser.getConnection().onUrl(URL_BASE.getValue())));
   }
 }

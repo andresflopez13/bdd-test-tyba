@@ -12,7 +12,7 @@ import net.thucydides.core.annotations.Step;
 public class HowMuchDoTheyLendYou implements Task {
 
   @Override
-  @Step("{0} go to the pivots section")
+  @Step("{0} go to the how much do they lend you calculator")
   public <T extends Actor> void performAs(T actor) {
     actor.attemptsTo(
         Click.on(BTN_SELECT_TOOLS), Click.on(BTN_HOUSING_MORTGAGE_CALCULATOR), TabBrowser.change());

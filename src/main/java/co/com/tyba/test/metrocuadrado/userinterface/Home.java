@@ -3,6 +3,11 @@ package co.com.tyba.test.metrocuadrado.userinterface;
 import net.serenitybdd.screenplay.targets.Target;
 
 public class Home {
+
+  private Home() {
+    throw new IllegalStateException("Utility class");
+  }
+
   public static final Target BTN_SELECT_TOOLS =
       Target.the("main menu tools button").locatedBy("//a[contains(text(),'Herramientas')]");
 
