@@ -24,6 +24,7 @@ El proyecto se construyó con las siguientes herramientas:
  - Sistema de versionamiento Git
  - Github como cliente web para almacenar el repositorio
  - Serenity BDD
+ - Chromedriver Versión 91.0.4472.101
  
 
 *Si desea conocer mas acerca del patron utilizado diríjase al siguiente enlace [Screenplay con SerenityBDD][screenplay]
@@ -33,7 +34,7 @@ El proyecto se construyó con las siguientes herramientas:
 Se adjuntan 3 tipos de reportes los cuales se encuentran en la siguiente ruta del proyecto
  - src/test/resources/reports
 
-En la ruta encontrara:
+En la ruta encontrará:
  - informe de la ejecución a través de la automatización llamado serenity_report en el cual se pueden observar los pasos y casos ejecutados
  - Informe general de la automatización denominado serenity_summary_report
  - Un pequeño archivo en excel donde se reporta un bug encontrado en la calculadora probada, este bug tambien se encuentra reflejado en los reportes de automatización
