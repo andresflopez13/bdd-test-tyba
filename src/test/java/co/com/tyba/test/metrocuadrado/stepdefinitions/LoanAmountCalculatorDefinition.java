@@ -47,7 +47,7 @@ public class LoanAmountCalculatorDefinition {
                 .isEqualTo(initial),
             Ensure.that(getNumericValue(listResult.get(3).getText()))
                 .asAnInteger()
-                .isEqualTo(amount + initial - 1),
+                .isEqualTo(amount + initial),
             Ensure.that(getNumericValue(listResultTable.get(0).getText()))
                 .asAnInteger()
                 .isEqualTo(amount),

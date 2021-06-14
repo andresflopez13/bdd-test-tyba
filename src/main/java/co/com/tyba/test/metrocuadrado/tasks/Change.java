@@ -10,4 +10,9 @@ public class Change {
       Integer salary) {
     return instrumented(InformationForTheCreditSimulator.class, salary);
   }
+
+  public static InformationForTheQuotaSimulator InformationForTheQuotaSimulatorWith(
+      Integer amount) {
+    return instrumented(InformationForTheQuotaSimulator.class, amount);
+  }
 }

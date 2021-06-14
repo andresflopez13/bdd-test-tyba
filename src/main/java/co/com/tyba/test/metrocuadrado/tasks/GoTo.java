@@ -9,4 +9,8 @@ public class GoTo {
   public static HowMuchDoTheyLendYou howMuchDoTheyLendYouCalculator() {
     return instrumented(HowMuchDoTheyLendYou.class);
   }
+
+  public static MonthlyQuotaCalculator monthlyQuotaCalculator() {
+    return instrumented(MonthlyQuotaCalculator.class);
+  }
 }
