@@ -11,7 +11,7 @@ Automatización de pruebas creada para el proyecto de calculadora metro cuadrado
 
 ## Patron 
 
-Para este proyecto se hace uso del patrón Screenplay, este un enfoque para escribir pruebas de aceptación automatizadas de alta calidad basadas en buenos principios de ingeniería de software, como el Principio de responsabilidad única, el Principio abierto-cerrado y el uso efectivo de capas de abstracción. Fomenta los buenos hábitos de prueba y los conjuntos de pruebas bien diseñados que son fáciles de leer, fáciles de mantener y de extender, lo que permite a los equipos escribir pruebas automatizadas más sólidas y confiables de manera más efectiva.
+Para este proyecto se hace uso del patrón Screenplay, este es un enfoque para escribir pruebas de aceptación automatizadas de alta calidad basadas en buenos principios de ingeniería de software, como el Principio de responsabilidad única, el Principio abierto-cerrado y el uso efectivo de capas de abstracción. Fomenta los buenos hábitos de prueba y los conjuntos de pruebas bien diseñados que son fáciles de leer, fáciles de mantener y de extender, lo que permite a los equipos escribir pruebas automatizadas más sólidas y confiables de manera más efectiva.
  
 ## Como esta construido
 El proyecto se construyó con las siguientes herramientas:
