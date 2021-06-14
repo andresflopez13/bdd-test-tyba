@@ -5,7 +5,7 @@
 Automatización de pruebas creada para el proyecto de calculadora metro cuadrado
 
 
-*Si desea conocer más acerca del aplicativo diríjase a la página principal del proyecto en el siguiente enlace [url_base]
+* Si desea conocer más acerca del aplicativo diríjase a la página principal del proyecto en el siguiente enlace [url_base]
 
 ---
 
@@ -27,7 +27,7 @@ El proyecto se construyó con las siguientes herramientas:
  - Chromedriver Versión 91.0.4472.101
  
 
-*Si desea conocer mas acerca del patron utilizado diríjase al siguiente enlace [Screenplay con SerenityBDD][screenplay]
+* Si desea conocer mas acerca del patron utilizado diríjase al siguiente enlace [Screenplay con SerenityBDD][screenplay]
 
 ---
 ## Evidencias y reportes
