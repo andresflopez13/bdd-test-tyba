@@ -1,5 +1,4 @@
-# bdd-test-tyba
-Repositorio para la prueba de ingreso a tyba 
+# Proyecto bdd-test-tyba
 
 **Tyba Automatización**
 
@@ -14,7 +13,7 @@ Automatización de pruebas creada para el proyecto de calculadora metro cuadrado
 
 Para este proyecto se hace uso del patrón Screenplay, este un enfoque para escribir pruebas de aceptación automatizadas de alta calidad basadas en buenos principios de ingeniería de software, como el Principio de responsabilidad única, el Principio abierto-cerrado y el uso efectivo de capas de abstracción. Fomenta los buenos hábitos de prueba y los conjuntos de pruebas bien diseñados que son fáciles de leer, fáciles de mantener y de extender, lo que permite a los equipos escribir pruebas automatizadas más sólidas y confiables de manera más efectiva.
  
-##Como esta construido
+## Como esta construido
 El proyecto se construyó con las siguientes herramientas:
  - Lenguaje de programación Java
  - IntelliJ IDEA
@@ -30,7 +29,7 @@ El proyecto se construyó con las siguientes herramientas:
 *Si desea conocer mas acerca del patron utilizado diríjase al siguiente enlace [Screenplay con SerenityBDD][screenplay]
 
 ---
-##Evidencias y reportes
+## Evidencias y reportes
 Se adjuntan 3 tipos de reportes los cuales se encuentran en la siguiente ruta del proyecto
  - src/test/resources/reports
 
