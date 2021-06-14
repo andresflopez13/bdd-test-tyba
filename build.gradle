@@ -45,13 +45,13 @@ ext {
 }
 
 dependencies {
-    implementation group: 'net.serenity-bdd',                   name: 'serenity-core',                      version: "$rootProject.ext.serenityVersion"
-    implementation group: 'net.serenity-bdd',                   name: 'serenity-junit',                     version: "$rootProject.ext.serenityVersion"
-    implementation group: 'net.serenity-bdd',                   name: 'serenity-screenplay',                version: "$rootProject.ext.serenityVersion"
-    implementation group: 'net.serenity-bdd',                   name: 'serenity-ensure',                    version: "$rootProject.ext.serenityVersion"
-    implementation group: 'net.serenity-bdd',                   name: 'serenity-cucumber6',                 version: "$rootProject.ext.serenityCucumberVersion"
-    implementation group: 'org.slf4j',                          name: 'slf4j-api',                          version: "$rootProject.ext.slf4jVersion"
-    implementation group: 'org.slf4j',                          name: 'slf4j-log4j12',                      version: "$rootProject.ext.slf4jVersion"
+    implementation group: 'net.serenity-bdd',   name: 'serenity-core',          version: "$rootProject.ext.serenityVersion"
+    implementation group: 'net.serenity-bdd',   name: 'serenity-junit',         version: "$rootProject.ext.serenityVersion"
+    implementation group: 'net.serenity-bdd',   name: 'serenity-screenplay',    version: "$rootProject.ext.serenityVersion"
+    implementation group: 'net.serenity-bdd',   name: 'serenity-ensure',        version: "$rootProject.ext.serenityVersion"
+    implementation group: 'net.serenity-bdd',   name: 'serenity-cucumber6',     version: "$rootProject.ext.serenityCucumberVersion"
+    implementation group: 'org.slf4j',          name: 'slf4j-api',              version: "$rootProject.ext.slf4jVersion"
+    implementation group: 'org.slf4j',          name: 'slf4j-log4j12',          version: "$rootProject.ext.slf4jVersion"
 }
 
 gradle.startParameter.continueOnFailure = true
